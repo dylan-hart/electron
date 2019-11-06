@@ -4,6 +4,7 @@ import { app } from 'electron/main';
 import type { ClientRequestConstructorOptions, UploadProgress } from 'electron/main';
 
 const {
+  isOnline,
   isValidHeaderName,
   isValidHeaderValue,
   createURLLoader
@@ -516,3 +517,11 @@ export class ClientRequest extends Writable implements Electron.ClientRequest {
 export function request (options: ClientRequestConstructorOptions | string, callback?: (message: IncomingMessage) => void) {
   return new ClientRequest(options, callback);
 }
+
+export function getIsOnline () {
+  return isOnline();
+}
+
+Object.defineProperty(exports, 'isOnline', {
+  get: () => isOnline()
+});

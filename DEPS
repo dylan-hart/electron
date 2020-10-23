@@ -14,7 +14,7 @@ gclient_gn_args = [
 
 vars = {
   'chromium_version':
-    '9269f9eb1d98d29564c2b2ab97f30c6e148c4e11',
+    'bb3d7981eccd9a323a0e224e6e2730f4d318fda3',
   'node_version':
     'v14.14.0',
   'nan_version':
@@ -25,7 +25,7 @@ vars = {
   'pyyaml_version': '3.12',
   'requests_version': 'e4d59bedfd3c7f4f254f4f5d036587bcd8152458',
 
-  'chromium_git': 'https://chromium.googlesource.com',
+  'chromium_git': 'https://dawn.googlesource.com/dawn',
   'electron_git': 'https://github.com/electron',
   'nodejs_git': 'https://github.com/nodejs',
   'requests_git': 'https://github.com/kennethreitz',
